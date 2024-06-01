@@ -1,0 +1,8 @@
+{
+    "AuthParameters": {
+        "USERNAME": "YOUR_USERNAME",
+        "PASSWORD": "YOUR_PASSWORD"
+    },
+    "AuthFlow": "USER_PASSWORD_AUTH",
+    "ClientId": "YOUR_COGNITO_CLIENT_ID"
+}
