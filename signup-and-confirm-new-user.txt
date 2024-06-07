@@ -1,0 +1,14 @@
+# In Cognito user pool, make sure the user you want to sign up is not already in the pool.
+aws cognito-idp sign-up \
+  --client-id CLIENT_ID \
+  --username jdoe@example.com \
+  --password PASSWORD \
+  --user-attributes Name="email",Value="jdoe@example.com" Name="name",Value="jdoe" \
+  --region us-east-1
+
+# Get Confirmation Code from email
+aws cognito-idp confirm-sign-up \
+  --client-id CLIENT_ID \
+  --username=jdoe@example.com \
+  --confirmation-code CONFIRMATION_CODE  \
+  --region us-east-1
